@@ -22,7 +22,7 @@ if st.button("Predict"):
     chemo_val = 1 if chemo == "Yes" else 0
     
     # Create input array with proper shape
-    input_data = np.array([[pct, maintain_dosage, blood_infection_val, ventilation_val, chemo_val]])
+    input_data = np.array([[ventilation_val, blood_infection_val, maintain_dosage, chemo_val, pct]])
     
     # Predict probability
     try:
